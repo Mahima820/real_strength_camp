@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="utf-8">
+    <title>Strength Camp</title>
+  </head>
+
+  <body>
+      <h1><% @title%></h1>
+
+      <h1> SIGN UP FOR STRENGTH CAMP </h1>
+
+      <p>Our one of a kind online and offline fitness training services, namely, fitness training provided in-person and via the internet</p>
+
+      <p>STRENGTH IS OF BODY, MIND, AND SOUL. AT STRENGTH CAMP, WE HELP GROW STRONGER BODIES… AND WE ALSO AIM TO HONOR YOUR WHOLENESS. WE WANT OUR MEMBERS TO BE “THE STRONGEST VERSION OF THEMSELVES”; BEGINNING WITH THE BODY</p>
+
+      <h2>JOIN NOW!</h2>
+      <h4>We value your privacy and would never spam you</h4>
+
+      <form action= '/sign_up' method="post">
+          <p>Full name: <input type="text" name="name"></p>
+          <p>Email: <input type="email" name="email"></p>
+          <p>Phone: <input type="text" name="phone"></p>
+          <p>Best time to reach you: <input type="text" name="time"></p>
+          <p>When do you want to start? <input type="date" name="date"></p>
+          <p>How did you hear about Strength Camp? <br> <textarea name="info" rows="8" cols="40"></textarea></p>
+          <input type="submit" name="submit" value="SUBMIT">
+      </form>

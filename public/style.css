@@ -1,0 +1,91 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(/fonts/warsawgothicext.otf);
+}
+body {
+  background-color: white;
+  color: black;
+  margin: 0;
+  font-family: myFirstFont;
+
+}
+
+ .menu table {
+ 	width: 40%;
+ 	top: 0;
+ 	position:absolute;
+ 	margin-top: 3%;
+ 	margin-left: 5%;
+    background: transparent;
+    font-size: 30px;
+
+ }
+.menu a {
+	text-decoration: none;
+	color: inherit;
+}
+.legend img {
+/*	background-image: url('legend.jpg');
+*/  position: relative;
+    margin-top: 0px;
+    width: 100%;
+
+
+}
+.logo img {
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.quote h1 {
+	position: absolute;
+	font-size: 80px;
+	text-align: center;
+	top: 135%;
+}
+.mission {
+	font-size: 60px;
+	width: 50%;
+	position: relative;
+	top: 540px;
+	z-index: 1;
+	left: 15px;
+}
+#image {
+	margin: auto;
+  	left: 30%;
+  	transform: translateX(50%);
+  	position: relative;
+  	text-align: center;
+  }
+
+  .container {
+  	width: 100%;
+  	position: absolute;
+
+  }
+ .band {
+ 	position: relative;
+ 	width: 100%;
+ 	height: 62%;
+ 	background-color: #4E6038;
+
+ }
+
+
+ .vision {
+	font-size: 40px;
+	width: 90%;
+	height: 1600px;
+	position: relative;
+	/*left: 15px;*/
+}
+
+.bottom{
+	width: 100%;
+	background-color: black;
+	bottom: 0;
+	color: white;
+	position: fixed;
+}
