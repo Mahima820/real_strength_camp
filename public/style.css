@@ -1,12 +1,11 @@
-@font-face {
-    font-family: myFirstFont;
-    src: url(/fonts/warsawgothicext.otf);
-}
+
 body {
   background-color: white;
   color: black;
   margin: 0;
-  font-family: myFirstFont;
+  background-repeat: no-repeat;
+  font-family: 'Open Sans', sans-serif;
+ 
 
 }
 
@@ -39,26 +38,62 @@ body {
 	transform: translateX(-50%);
 }
 .quote h1 {
+	width: 60%;
 	position: absolute;
-	font-size: 80px;
+	font-size: 50px;
 	text-align: center;
-	top: 135%;
+	top: 130%;
+	margin-right: -80px;
+	border: solid;
+	
+	
+}
+.quote #dumbells {
+	margin-right: -140px;
+	position: relative;
+	float: right;
+	border: solid;
+	top: 60px;
+}
+.quote #barbell {
+float: left;
+margin-left: -140px;
 }
 .mission {
 	font-size: 60px;
 	width: 50%;
 	position: relative;
 	top: 540px;
-	z-index: 1;
+	z-index: 2;
 	left: 15px;
 }
-#image {
-	margin: auto;
-  	left: 30%;
-  	transform: translateX(50%);
-  	position: relative;
-  	text-align: center;
+.mission p {
+	font-size: 40px;
+	width: 110%;
+	color: white;
+	margin-left: 50px;
+}
+.band .info {
+  	right: 200px;
+  	top: 0;
+  	width: 300px;
+  	bottom: 0;
+  	position: absolute;
+  	z-index: 2;
+  	background-color: rgba(255,255,255,0.3);
+  	color: black;
   }
+
+.band:before {
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left:0;
+	right:0;
+	background-color: rgba(0,0,0,0.5);
+	content: '';
+	z-index:1;
+}
 
   .container {
   	width: 100%;
@@ -68,24 +103,133 @@ body {
  .band {
  	position: relative;
  	width: 100%;
- 	height: 62%;
- 	background-color: #4E6038;
-
+ 	height: 500px;
+ 	background-image: url(media/dumbells.jpg);
+ 	background-size: cover;
  }
-
+.content h2 {
+	margin-left: 25px;
+}
+.content p {
+	margin-top: -15px;
+	margin-left: 7px;
+	padding: 7px;
+}
 
  .vision {
 	font-size: 40px;
-	width: 90%;
-	height: 1600px;
-	position: relative;
+	width: 55%;
+	position: absolute;
+	margin-top: 0%;
 	/*left: 15px;*/
+
+}
+.vision img {
+	width: 1440px;
+	position: relative;
+}
+.vision p {
+	margin-top: -600px;
+	margin-left: 50px;
+	position: relative;
+	color: white;
+	font-size: 30px;
+}
+.trainers_container {
+	width: 100%;
+	height: 475px;
+	margin: 0 auto;
+	position: absolute; 
+	text-align: center;
+	top: 1680px;
 }
 
-.bottom{
-	width: 100%;
-	background-color: black;
-	bottom: 0;
+.trainers_img{
+	top: -40px;
+	width: 22%;
+	height: 450px;
+	padding: 20px;
+	position: relative;
+}
+
+/*training page*/
+
+body.training{
+	background: url(media/ropes.jpg) no-repeat center center fixed;
+	background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+	background-repeat: no-repeat;
 	color: white;
-	position: fixed;
+
+}
+.p1 {
+	width: 450px;
+	text-align: left;
+	color: white;
+	margin-left: 300px;
+}
+.structure {
+background: inherit;
+ width: 550px;
+ height: 200px;
+ position: absolute;
+ overflow: hidden; 
+ margin-left: 300px;
+ margin-top: 50px;
+}
+.structure:before{
+ content:"";
+ width: 600px;
+ height: 350px;
+ background: inherit; 
+ position: absolute;
+ left: -25px;   
+ bottom: 0;
+ box-shadow: inset 0 0 0 200px rgba(000,000,000,0.5);
+ filter: blur(5px);
+}
+#text_overlay {
+	position: absolute;
+}
+.strength {
+	background: inherit;
+	width: 550px;
+	height: 200px;
+	position: absolute;
+	overflow: hidden;
+	margin: 300px;
+}
+.strength:before{
+	content:"";
+	width: 600px;
+	height: 350px;
+	background: inherit;
+	position: absolute;
+	box-shadow: inset 0 0 0 200px rgba(000,000,000,0.5);
+	filter: blur(5px);
+}
+#text_strength {
+	position: absolute;
+
+}
+.speed {
+	background: inherit;
+	width: 550px;
+	height: 200px;
+	position: absolute;
+	overflow: hidden;
+	margin-left: 300px;
+	margin-top: 550px;
+}
+.speed:before{
+	content:"";
+	width: 600px;
+	height: 350px;
+	background: inherit;
+	position: absolute;
+	box-shadow: inset 0 0 0 200px rgba(000,000,000,0.5);
+	filter: blur(5px);
+}
+#text_speed {
+	position: absolute;
 }

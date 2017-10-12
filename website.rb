@@ -1,5 +1,8 @@
 require "sinatra"
 
+before do 
+	@class=""
+end
 
 get '/' do
   @title = 'Strength Camp!'
@@ -14,4 +17,9 @@ end
 
 get '/home_page' do
   erb :membership
+end
+
+get '/training' do
+@class="training"
+ erb :training
 end
